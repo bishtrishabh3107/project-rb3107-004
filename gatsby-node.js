@@ -33,7 +33,9 @@ exports.createPages = async ({ graphql, actions }) => {
   const articles = result.data.articles.edges;
   const products = result.data.products.edges;
 
-  const ArticleTemplate = require.resolve('./src/templates/articleTemplate.js');
+  const ArticleTemplate = require.resolve(
+    './src/templates/articleTemplate.tsx'
+  );
 
   articles.forEach((article, index) => {
     createPage({
@@ -45,7 +47,9 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const ProductTemplate = require.resolve('./src/templates/productTemplate.js');
+  const ProductTemplate = require.resolve(
+    './src/templates/productTemplate.tsx'
+  );
 
   products.forEach((product, index) => {
     createPage({

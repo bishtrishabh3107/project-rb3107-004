@@ -1,46 +1,83 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import '../../../assets/styles/index.scss';
 import HorizontalLine from '../HorizontalLine';
 import CategoryProducts from '../CategoryProducts';
 import Bounce from 'react-reveal/Bounce';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
 
-function NewAgeDevicesCategoryProducts() {
-  return (
-    <div className="CategoryProducts">
-      <Bounce left>
-        <div className="horizontalLine">
-          <HorizontalLine sectionTitle="New Age Devices" />
-        </div>
-      </Bounce>
-      <div className="columns is-tablet is-gapless">
+export default class NewAgeDevicesCategoryProducts extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      pauseOnHover: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            initialSlide: 2,
+          },
+        },
+      ],
+    };
+    return (
+      <div className="mt-16 mx-10">
+        <Bounce left>
+          <div className="horizontalLine">
+            <HorizontalLine sectionTitle="New Age Devices" />
+          </div>
+        </Bounce>
         <StaticQuery
           query={NewAgeDevicesProduct}
-          render={(data) => {
-            return (
-              <>
-                {data.allStrapiProduct.edges.map(({ node }) => (
-                  <div className="column" key={node.id}>
-                    <div>
-                      <CategoryProducts
-                        fixed={node.image.childImageSharp.fixed}
-                        productFamily={node.productFamily}
-                        slug={node.slug}
-                        key={node.id}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </>
-            );
-          }}
+          render={(data) => (
+            <Slider {...settings}>
+              {data.allStrapiProduct.edges.map(({ node }) => (
+                <div key={node.id}>
+                  <CategoryProducts
+                    fixed={node.image.childImageSharp.fixed}
+                    productFamily={node.productFamily}
+                    key={node.id}
+                    description={node.description}
+                  />
+                </div>
+              ))}
+            </Slider>
+          )}
         />
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default NewAgeDevicesCategoryProducts;
 
 const NewAgeDevicesProduct = graphql`
   {
@@ -50,7 +87,6 @@ const NewAgeDevicesProduct = graphql`
         productClass: { eq: "Supreme_Class" }
       }
       sort: { fields: publishedAt, order: DESC }
-      limit: 5
     ) {
       edges {
         node {

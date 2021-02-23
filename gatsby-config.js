@@ -3,12 +3,6 @@ require('dotenv').config({
 });
 
 module.exports = {
-  flags: {
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true,
-    FAST_DEV: true,
-    FAST_REFRESH: true,
-  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -25,6 +19,7 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-postcss`,
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
@@ -57,7 +52,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: '../frontend/src/assets/images/icon.png',
+        icon: 'src/assets/images/icon.png',
       },
     },
     {

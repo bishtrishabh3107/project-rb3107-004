@@ -135,6 +135,222 @@ const SEO = ({ seo = {} }) => {
         content: fullSeo.keyword15,
       });
     }
+    if (fullSeo.keyword16) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword16,
+      });
+    }
+    if (fullSeo.keyword17) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword17,
+      });
+    }
+    if (fullSeo.keyword18) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword18,
+      });
+    }
+    if (fullSeo.keyword19) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword19,
+      });
+    }
+    if (fullSeo.keyword20) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword20,
+      });
+    }
+    if (fullSeo.keyword21) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword21,
+      });
+    }
+    if (fullSeo.keyword22) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword22,
+      });
+    }
+    if (fullSeo.keyword23) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword23,
+      });
+    }
+    if (fullSeo.keyword24) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword24,
+      });
+    }
+    if (fullSeo.keyword25) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword25,
+      });
+    }
+    if (fullSeo.keyword26) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword26,
+      });
+    }
+    if (fullSeo.keyword27) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword27,
+      });
+    }
+    if (fullSeo.keyword28) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword28,
+      });
+    }
+    if (fullSeo.keyword29) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword29,
+      });
+    }
+    if (fullSeo.keyword30) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword30,
+      });
+    }
+    if (fullSeo.keyword31) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword31,
+      });
+    }
+    if (fullSeo.keyword32) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword32,
+      });
+    }
+    if (fullSeo.keyword33) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword33,
+      });
+    }
+    if (fullSeo.keyword34) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword34,
+      });
+    }
+    if (fullSeo.keyword35) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword35,
+      });
+    }
+    if (fullSeo.keyword36) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword36,
+      });
+    }
+    if (fullSeo.keyword37) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword37,
+      });
+    }
+    if (fullSeo.keyword38) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword38,
+      });
+    }
+    if (fullSeo.keyword39) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword39,
+      });
+    }
+    if (fullSeo.keyword40) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword40,
+      });
+    }
+    if (fullSeo.keyword41) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword41,
+      });
+    }
+    if (fullSeo.keyword42) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword42,
+      });
+    }
+    if (fullSeo.keyword43) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword43,
+      });
+    }
+    if (fullSeo.keyword44) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword44,
+      });
+    }
+    if (fullSeo.keyword45) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword45,
+      });
+    }
+    if (fullSeo.keyword46) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword46,
+      });
+    }
+    if (fullSeo.keyword47) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword47,
+      });
+    }
+    if (fullSeo.keyword48) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword48,
+      });
+    }
+    if (fullSeo.keyword49) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword49,
+      });
+    }
+    if (fullSeo.keyword50) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword50,
+      });
+    }
+    if (fullSeo.keyword51) {
+      tags.push({
+        name: 'keyword',
+        content: fullSeo.keyword51,
+      });
+    }
     if (fullSeo.shareImage) {
       const imageUrl =
         (process.env.GATSBY_ROOT_URL || 'http://localhost:8000') +
@@ -202,6 +418,40 @@ SEO.propTypes = {
   keyword13: PropTypes.string,
   keyword14: PropTypes.string,
   keyword15: PropTypes.string,
+  keyword16: PropTypes.string,
+  keyword17: PropTypes.string,
+  keyword18: PropTypes.string,
+  keyword19: PropTypes.string,
+  keyword21: PropTypes.string,
+  keyword22: PropTypes.string,
+  keyword23: PropTypes.string,
+  keyword24: PropTypes.string,
+  keyword25: PropTypes.string,
+  keyword26: PropTypes.string,
+  keyword27: PropTypes.string,
+  keyword28: PropTypes.string,
+  keyword29: PropTypes.string,
+  keyword30: PropTypes.string,
+  keyword31: PropTypes.string,
+  keyword32: PropTypes.string,
+  keyword33: PropTypes.string,
+  keyword34: PropTypes.string,
+  keyword35: PropTypes.string,
+  keyword36: PropTypes.string,
+  keyword37: PropTypes.string,
+  keyword38: PropTypes.string,
+  keyword39: PropTypes.string,
+  keyword40: PropTypes.string,
+  keyword41: PropTypes.string,
+  keyword42: PropTypes.string,
+  keyword43: PropTypes.string,
+  keyword44: PropTypes.string,
+  keyword45: PropTypes.string,
+  keyword46: PropTypes.string,
+  keyword47: PropTypes.string,
+  keyword48: PropTypes.string,
+  keyword49: PropTypes.string,
+  keyword50: PropTypes.string,
   image: PropTypes.string,
   product: PropTypes.bool,
 };

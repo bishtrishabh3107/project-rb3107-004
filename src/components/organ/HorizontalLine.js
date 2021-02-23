@@ -1,5 +1,5 @@
 import React from 'react';
-import '../organ/HorizontalLine';
+import './HorizontalLine';
 
 function HorizontalLine({ sectionTitle }) {
   let div = {
@@ -23,7 +23,9 @@ function HorizontalLine({ sectionTitle }) {
   return (
     <div style={div}>
       <h2 className="horizontalLine" style={h2}>
-        <span style={span}>{sectionTitle}</span>
+        <span className="theme-dark:bg-black" style={span}>
+          {sectionTitle}
+        </span>
       </h2>
     </div>
   );
