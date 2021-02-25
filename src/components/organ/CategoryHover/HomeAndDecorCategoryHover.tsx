@@ -18,7 +18,7 @@ function HomeAndDecorCategoryHover() {
                   {data.allStrapiProduct.edges.map(({ node }) => (
                     <div key={node.id}>
                       <a
-                        className="block text-blue-600 bg-red-400 hover:bg-red-300 px-2 py-1 block whitespace-no-wrap text-xs"
+                        className="block font-semibold text-blue-600 bg-red-400 hover:bg-red-300 px-2 py-1 block whitespace-no-wrap text-xs"
                         href={`/products/${slugify(node.productFamily)}`}
                       >
                         {node.productFamily}

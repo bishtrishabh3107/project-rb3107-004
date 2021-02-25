@@ -5,6 +5,7 @@ body {
   }
   a {
     text-decoration: none !important;
+    color: #1e90ff;
   }
 }
 
@@ -24,9 +25,11 @@ body {
   body {
     h1 {
       font-size: 15px;
+      font-weight: bold;
     }
     h2 {
       font-size: 12px;
+      font-weight: 600;
     }
     h3 {
       font-size: 10px;
@@ -44,6 +47,7 @@ body {
   body {
     h1 {
       font-size: 22px;
+      font-weight: bold;
     }
     h2 {
       font-size: 15px;

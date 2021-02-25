@@ -8,7 +8,7 @@
 
 @import './products.scss';
 
-@import './global.css';
+@import './global.scss';
 
 .theme-light {
   --primary: #f8f8f8;
@@ -16,7 +16,6 @@
   --text-main: #0d0106;
   --text-secondary: #454e56;
   --accent: #009ffd;
-  --a: black;
 }
 
 .theme-dark {
@@ -25,5 +24,4 @@
   --text-main: #eaeaea;
   --text-secondary: #b8b8b9;
   --accent: #fc7753;
-  --a: white;
 }

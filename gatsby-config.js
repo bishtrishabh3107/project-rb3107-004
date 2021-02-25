@@ -19,8 +19,18 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-postcss`,
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   important: true,
   theme: {
@@ -23,5 +23,5 @@ module.exports = {
     display: ['group-hover'],
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwindcss'), require('autoprefixer')],
 };

@@ -13,7 +13,7 @@ function CampingCategoryHeader() {
               {data.allStrapiProduct.edges.map(({ node }) => (
                 <div key={node.id}>
                   <a
-                    className=""
+                    className="text-blue-500 hover:text-red-400"
                     href={`/products/${slugify(node.productFamily)}`}
                   >
                     {node.productFamily}
