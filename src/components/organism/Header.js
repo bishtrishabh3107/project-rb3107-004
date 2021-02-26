@@ -28,22 +28,24 @@ function Header() {
     }
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col md:w-0 sm:w-0">
       <nav
         className="navbar is-transparent is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
-        <div className="navbar-brand ml-10 text-2xl flex flex-row text-center md:text-xl sm:text-lg">
-          <a className="flex flex-row" href="/">
-            <span className="my-3 icon text-green-500 md:my-2 sm:my-2">
+        <div className="navbar-brand ml-5 text-2xl flex flex-row text-center md:text-xl sm:text-lg">
+          <a className="flex flex-row my-1.5" href="/">
+            <span className="my-2.5 icon text-lg text-green-500">
               <GiPumpkinLantern />
             </span>
-            <h1 className="mx-1 my-2 text-yellow-500 md:mr-1 sm:mr-1 md:ml-0 sm:ml-0">
+            <h1 className="mx-1 my-2 text-lg text-yellow-500 md:mr-1 sm:mr-1 md:ml-0 sm:ml-0">
               Goods{' '}
             </h1>
-            <h1 className="mr-1 my-2 text-blue-500 md:mr-0 sm:mr-0">UMPIRE </h1>
-            <span className="my-3 icon text-green-500 md:my-2 sm:my-2">
+            <h1 className="mr-1 my-2 text-lg text-blue-500 md:mr-0 sm:mr-0">
+              UMPIRE{' '}
+            </h1>
+            <span className="my-2.5 icon text-lg text-green-500">
               <GiShoppingCart />
             </span>
           </a>
