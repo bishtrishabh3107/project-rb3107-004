@@ -15,6 +15,8 @@ import NewAgeDevicesCategoryHeader from '../organ/CategoryHeader/NewAgeDevicesCa
 import ElectronicsCategoryHeader from '../organ/CategoryHeader/ElectronicsCategoryHeader';
 import HomeAndDecorCategoryHeader from '../organ/CategoryHeader/HomeAndDecorCategoryHeader';
 import GiftsCategoryHeader from '../organ/CategoryHeader/GiftsCategoryHeader';
+import BabyCategoryHover from '../organ/CategoryHover/BabyCategoryHover';
+import BabyCategoryHeader from '../organ/CategoryHeader/BabyCategoryHeader';
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -103,6 +105,14 @@ function Header() {
               />
             </div>
             <div className="xl:invisible lg:invisible xl:w-0 lg:w-0 navbar-item has-dropdown is-hoverable -my-4">
+              <a className="navbar-link">Toddlers</a>
+              <div className="navbar-dropdown">
+                <div className="">
+                  <BabyCategoryHeader />
+                </div>
+              </div>
+            </div>
+            <div className="xl:invisible lg:invisible xl:w-0 lg:w-0 navbar-item has-dropdown is-hoverable -my-4">
               <a className="navbar-link">New Age Devices</a>
               <div className="navbar-dropdown">
                 <div className="">
@@ -142,6 +152,7 @@ function Header() {
         </div>
       </nav>
       <div className="flex flex-row justify-evenly">
+        <BabyCategoryHover />
         <NewAgeDevicesCategoryHover />
         <ElectronicsCategoryHover />
         <CampingCategoryHover />

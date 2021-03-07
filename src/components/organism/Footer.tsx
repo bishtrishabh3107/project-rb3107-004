@@ -79,7 +79,7 @@ function Footer() {
               </span>
               <span className="my-2">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/GoodsUmpire-100422558782588"
                   className="text-blue-700  text-md hover:text-blue-500"
                 >
                   <FaFacebook className="facebook-icon" size="2em" />
