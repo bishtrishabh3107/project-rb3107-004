@@ -15,13 +15,12 @@ function MainSection() {
               query={mainArticle}
               render={(data) => {
                 return (
-                  <div>
+                  <div className="grid grid-cols-2 gap-3">
                     {data.allStrapiArticle.edges.map(({ node }) => (
                       <MainSectionCard
                         key={node.id}
                         title={node.title}
                         date={node.publishedAt}
-                        description={node.description}
                         fluid={node.image.childImageSharp.fluid}
                         slug={node.slug}
                       />
@@ -47,7 +46,7 @@ export default MainSection;
 const mainArticle = graphql`
   {
     allStrapiArticle(
-      limit: 1
+      limit: 4
       sort: { fields: publishedAt, order: DESC }
       filter: { status: { eq: "published" } }
     ) {

@@ -5,6 +5,7 @@ import GiftsCategoryProducts from '../organ/CategoriesSection/GiftsCategoryProdu
 import HomeAndDecorCategoryProducts from '../organ/CategoriesSection/HomeAndDecorCategoryProducts';
 import NewAgeDevicesCategoryProducts from '../organ/CategoriesSection/NewAgeDevicesCategoryProducts';
 import BabyCategoryProducts from '../organ/CategoriesSection/BabyCategoryProducts';
+import PetsCategoryProducts from '../organ/CategoriesSection/PetsCategoryProducts';
 
 function ProductSection() {
   return (
@@ -15,6 +16,7 @@ function ProductSection() {
       <HomeAndDecorCategoryProducts />
       <GiftsCategoryProducts />
       <BabyCategoryProducts />
+      <PetsCategoryProducts />
     </div>
   );
 }

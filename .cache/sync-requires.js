@@ -9,7 +9,7 @@ exports.components = {
   "component---src-pages-404-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\404.tsx"))),
   "component---src-pages-articles-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\articles.tsx"))),
   "component---src-pages-index-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\index.tsx"))),
-  "component---src-pages-products-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\products.tsx"))),
+  "component---src-pages-products-js": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\products.js"))),
   "component---src-pages-sociallyacclaimed-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\sociallyacclaimed.tsx"))),
   "component---src-pages-trending-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\pages\\trending.tsx"))),
   "component---src-templates-article-template-tsx": hot(preferDefault(require("C:\\Users\\ribisht.ORADEV\\Desktop\\MyCode\\umpire-frontend-tailwind\\frontend\\src\\templates\\articleTemplate.tsx"))),

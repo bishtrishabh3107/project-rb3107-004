@@ -120,7 +120,7 @@ const ProductTemplate = ({ data }) => {
     <Layout seo={seo}>
       <div className="columns">
         <div className="column is-two-thirds" style={{ marginRight: '1.5rem' }}>
-          <h1 className="">{product.productFamily}</h1>
+          <h1 className="mt-5">{product.productFamily}</h1>
           {data.allStrapiProduct.edges.map(({ node }) => (
             <ProductClassTemplate
               key={node.id}
@@ -141,7 +141,9 @@ const ProductTemplate = ({ data }) => {
           ))}
         </div>
         <div className="column is-one-thirds md:ml-28">
-          <SideScreen />
+          <div className="mt-14">
+            <SideScreen />
+          </div>
         </div>
       </div>
     </Layout>

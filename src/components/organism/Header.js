@@ -17,6 +17,8 @@ import HomeAndDecorCategoryHeader from '../organ/CategoryHeader/HomeAndDecorCate
 import GiftsCategoryHeader from '../organ/CategoryHeader/GiftsCategoryHeader';
 import BabyCategoryHover from '../organ/CategoryHover/BabyCategoryHover';
 import BabyCategoryHeader from '../organ/CategoryHeader/BabyCategoryHeader';
+import PetsCategoryHover from '../organ/CategoryHover/PetsCategoryHover';
+import PetsCategoryHeader from '../organ/CategoryHeader/PetsCategoryHeader';
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -148,6 +150,12 @@ function Header() {
                 <GiftsCategoryHeader />
               </div>
             </div>
+            <div className="xl:invisible lg:invisible xl:w-0 lg:w-0 navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">Pets</a>
+              <div className="navbar-dropdown">
+                <PetsCategoryHeader />
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -158,6 +166,7 @@ function Header() {
         <CampingCategoryHover />
         <HomeAndDecorCategoryHover />
         <GiftsCategoryHover />
+        <PetsCategoryHover />
       </div>
     </div>
   );

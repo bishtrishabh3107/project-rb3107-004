@@ -85,7 +85,7 @@ function Footer() {
                   <FaFacebook className="facebook-icon" size="2em" />
                 </a>
               </span>
-              <span className="my-2">
+              {/* <span className="my-2">
                 <a
                   href="https://twitter.com"
                   className="text-blue-700  text-md hover:text-blue-500"
@@ -100,7 +100,7 @@ function Footer() {
                 >
                   <FaInstagram className="instagram-icon" size="2em" />
                 </a>
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

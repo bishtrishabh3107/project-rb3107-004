@@ -39,7 +39,7 @@ const Article = ({ data }) => {
         <div className="column is-two-thirds" style={{ marginRight: '2rem' }}>
           <div className="blog_details">
             <header>
-              <h1>{article.title}</h1>
+              <h1 className="mt-5">{article.title}</h1>
               <Img fluid={article.image.childImageSharp.fluid} />
               <h3 style={{ marginBottom: '1rem' }}>
                 Published On: {article.publishedAt}
@@ -51,7 +51,9 @@ const Article = ({ data }) => {
           </div>
         </div>
         <div className="column is-one-thirds">
-          <SideScreen />
+          <div className="mt-12">
+            <SideScreen />
+          </div>
         </div>
       </div>
     </Layout>
