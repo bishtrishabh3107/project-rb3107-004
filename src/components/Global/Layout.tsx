@@ -34,7 +34,7 @@ const Layout = ({ children, seo }) => {
         <div
           className={`${
             theme === 'light' ? 'theme-light' : 'theme-dark'
-          } bg-primary text-main-text text-center transition-all duration-300 py-5 min-h-screen w-screen`}
+          } bg-primary text-main-text text-center transition-all duration-300 py-5 min-h-screen min-w-screen`}
         >
           <Seo seo={seo} />
           <Header />
